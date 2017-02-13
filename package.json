@@ -1,0 +1,14 @@
+{
+  "name": "postcss-reportal-save-to-json",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ConfirmitASA/postcss-reportal-save-to-json.git"
+  },
+  "author": "ConfirmitASA",
+  "license": "",
+  "homepage": "https://github.com/ConfirmitASA/postcss-reportal-save-to-json#readme",
+  "dependencies": {
+    "postcss": "^5.0.0"
+  }
+}
