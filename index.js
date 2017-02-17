@@ -32,7 +32,7 @@ module.exports = pcss.plugin('reportal-save-to-json-plugin', function (options) 
 
     Object.keys(extractedProperties).forEach(key => {
       var resolved = reportalConfig[key];
-      if (resolved && /(#\w{6}|#\w{3}|rgba?\((\s*\d{1,3}\s*,){2}\s*\d{1,3}\s*(,\s*(1|0(.\d+)?))?\)|[a-zA-Z]+)/.test(resolved)) {
+      if (resolved && /(#\w{6}|#\w{3}|rgba?\((\s*\d{1,3}\s*,){2}\s*\d{1,3}\s*(,\s*(1|0(.\d+)?))?\)|^[a-zA-Z]+$)/.test(resolved)) {
         extractedProperties[key].resolved = resolved;
       } else {
         delete extractedProperties[key];
